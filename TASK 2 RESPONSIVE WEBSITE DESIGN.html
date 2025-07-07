@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Design Showcase</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4a90e2, #0077b6);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #0077b6;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #023e8a;
+    }
+
+    .container {
+      padding: 2rem 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1.2rem;
+    }
+
+    .card-content h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      color: #0077b6;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background-color: #0077b6;
+      color: #fff;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Responsive Design Demo</h1>
+    <p>Seamlessly adjusts layout across devices – desktop, tablet, mobile</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Features</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="container">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Workspace">
+      <div class="card-content">
+        <h2>Clean Layout</h2>
+        <p>Designed with simplicity in mind, the layout adapts elegantly on all screens.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://c8.alamy.com/comp/EDD7KX/teamwork-team-together-collaboration-business-communication-outdoors-EDD7KX.jpg" alt="Teamwork">
+      <div class="card-content">
+        <h2>Fully Responsive</h2>
+        <p>Uses CSS Grid and media queries to adapt sections based on screen width.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Nature">
+      <div class="card-content">
+        <h2>Modern Design</h2>
+        <p>Sleek typography, shadows, and hover effects give a professional appearance.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Responsive Design Project. Built with 💙</p>
+  </footer>
+
+</body>
+</html>
